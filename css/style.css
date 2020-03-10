@@ -80,92 +80,36 @@ body {
 }
 /* Responsivas */
 @media screen and (max-width: 925px) {
-  .header-desk {
-    display: none;
+  .header-nav {
+    margin-bottom: 1rem;
   }
-  .menu-mobile {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-  }
-  .navigation {
-    display: flex;
-    justify-content: flex-start;
-  }
-
-  .enlaces {
-    position: fixed;
-    display: flex;
-    top: 0;
-    bottom: 0;
-    right: 0;
+  .logo{
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: auto;
-    width: 40%;
-    background: rgba(255, 255, 255, 0.7);
-    transition: 0.8s ease-in;
   }
-  .enlaces ul li {
-    text-decoration: none;
-    list-style: none;
-    margin-bottom: 10%;
+  .header-site {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax( min-content, max-content );
   }
-  .enlaces ul li a {
-    font-size: 3rem;
+}
+@media screen and (max-width: 430px){
+  .header-nav a{
+    padding: .4rem;
+    font-size: 1.5rem;
   }
-  .icono {
-    display: block;
-    margin: 0 2rem;
-    animation: Left 1s ease-in;
-    z-index: 100;
+}
+@media screen and (max-width: 370px){
+  .header-nav{
+    flex-direction: column;
+  }
+  .header-nav a{
+    padding: 1rem;
+    margin: 1rem;
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
   }
   .uno {
-    clip-path: inset(0 0 0 100%);
-  }
-  .dos {
-    clip-path: inset(0 0 0 0);
-  }
-  .menu {
-    width: 5rem;
-    height: 5 rem;
-    transform: rotate(-90deg);
-    right: 0;
-  }
-}
-@media screen and (max-width: 715px){
-  .enlaces{
-    width: 50%;
-  }
-}
-@media screen and (max-width: 503px){
-  .enlaces {
-    width: 60%;
-  }
-  .enlaces ul li a{
-    margin: 0 auto;
-    font-size: 2.5rem;
-  }
-}
-@media screen and (max-width: 400px){
-  .enlaces{
-    width: 80%;
-  }
-  .logo a{
-    font-size: 3rem;
-  }
-  .logo img{
-    width: 80px;
-  }
-  .menu{
-    width: 4rem;
-  }
-}
-@media screen and (max-width: 320px){
-  .logo a{
-    font-size: 2.6rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
   }
 }
 /* #endregion */
