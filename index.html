@@ -6,24 +6,65 @@
     <title>Mi Crush</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet"> 
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300i,400,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body class="body-inicio">
-    <header class="header-site container-header">
-      <div class="header-title">
-        <a href="index.html"><h1>Joshebet Ilanith</h1></a>
-      </div>
-      <nav>
-        <a class="btn" href="/">Inicio</a>
-        <a class="btn" href="blog.html">Blog</a>
-        <a class="btn" href="gallery.html">Galería</a>
+  <body class="body-index">
+   <!-- Header -->
+   <header class="header-site">
+    <!-- Header -->
+    <!-- Logo -->
+    <div class="logo">
+      <a href="index.html">
+        <img src="src/entrada-dos.jpg" alt="Logo Imagen" />
+      </a>
+      <a href="index.html" class="header-title">Joshebet Ilanith</a>
+    </div>
+    <!-- Logo -->
+    <!-- Navegación -->
+    <div class="nav header-desk">
+      <nav class="header-nav">
+        <a class="up" href="index.html">Inicio</a>
+        <a class="down" href="index-dos.html">Sobre Ella</a>
+        <a class="up" href="blog.html">Sus Dedicatorias</a>
+        <a class="down" href="gallery.html">Su Galería</a>
       </nav>
-    </header>
-    <div class="container-home">
-      <img src="src/galeria-dieciseis.jpeg" alt="Imagen de Fondo" />
+      <!-- Navegación -->
     </div>
-    <div class="button-home">
-      <a href="blog.html">Continuemos</a>
+
+    <div class="menu-mobile">
+      <nav class="navigation">
+        <a href="#" id="icono" class="icono"
+          ><img class="menu" src="src/menu.png" alt=""
+        /></a>
+        <div class="enlaces uno" id="enlaces">
+          <ul>
+            <li><a class="up" href="index.html">Inicio</a></li>
+            <li><a class="down" href="index-dos.html">Sobre Ella</a></li>
+            <li><a class="up" href="blog.html">Sus Dedicatorias</a></li>
+            <li><a class="down" href="gallery.html">Su Galería</a></li>
+          </ul>
+        </div>
+      </nav>
     </div>
+    <script src="main.js"></script>
+  </header>
+  <!-- Header -->
+    <!-- Contenido Index -->
+    <div class="contenido-index">
+      <div class="container-home">
+        <h2>¿Estás listo para conocer a la mejor persona del mundo mundial?</h2>
+      </div>
+      <div class="button-home">
+        <a href="index-dos.html">Estoy listo</a>
+      </div>
+    </div>
+    <!-- Contenido Index -->
   </body>
 </html>
